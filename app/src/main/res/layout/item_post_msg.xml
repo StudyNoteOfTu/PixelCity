@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingyan.pixcelcity.vies.swipeViews.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/bg_rect_round">
+
+
+    <com.bingyan.pixcelcity.vies.DataContainedLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/datacontained_linearlayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                app:riv_oval="true"
+                android:id="@+id/img_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_date"
+                android:layout_toRightOf="@id/img_icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textColor="#252837"
+                    android:textSize="0dp" />
+
+                <TextView
+                    android:gravity="center|start"
+                    android:text="xixixi"
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:ellipsize="end"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="17:56"
+                android:layout_gravity="center_vertical"
+                android:textColor="#A8A8A8"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+    </com.bingyan.pixcelcity.vies.DataContainedLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_ok"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/ic_launcher_round" />
+
+    </LinearLayout>
+
+
+</com.bingyan.pixcelcity.vies.swipeViews.SwipeItemLayout>

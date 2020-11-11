@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#f7f7f7">
+
+    <com.bingyan.pixcelcity.vies.StatusBarView
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/bg_search"
+        android:padding="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_search"
+            android:background="@drawable/search" />
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="探索地区名"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/radioGroup"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:paddingTop="5dp"-->
+    <!--        android:paddingBottom="5dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        >-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rb_local"-->
+    <!--            android:layout_width="160dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:button="@null"-->
+    <!--            android:checked="true"-->
+    <!--            android:background="@drawable/selector_explore_text_back_left"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="本地"-->
+    <!--            android:textColor="@drawable/selector_explore_text_color" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rb_found"-->
+    <!--            android:layout_width="160dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:button="@null"-->
+    <!--            android:gravity="center"-->
+    <!--            android:background="@drawable/selector_explore_text_back_right"-->
+    <!--            android:text="发现"-->
+    <!--            android:textColor="@drawable/selector_explore_text_color" />-->
+
+
+    <!--    </RadioGroup>-->
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="8"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/iv_publish"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_sircle"
+            android:elevation="2dp"
+            android:padding="15dp"
+            android:src="@drawable/fly" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

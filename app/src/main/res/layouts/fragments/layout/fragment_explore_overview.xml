@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="#ffffff"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:elevation="5dp"
+    android:background="@drawable/bg_shadow2"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/img_camera"
+                android:src="@drawable/camera_dark"
+                android:layout_toStartOf="@id/img_collection"
+                android:layout_toLeftOf="@id/img_collection" />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/img_collection"
+                android:layout_centerVertical="true"
+                android:src="@drawable/collection"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/test_huanghelou"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="武汉"
+            android:textColor="#ff252837"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+
+            android:layout_gravity="center"
+            android:id="@+id/tv_more"
+            android:textColor="#ff000000"
+            android:text="@string/find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

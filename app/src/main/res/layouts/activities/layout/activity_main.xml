@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:background="#fbfbfb"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/radioGroup"/>
+
+    <RadioGroup
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:background="#00000000"
+            android:id="@+id/rbMap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_rb_map"
+            android:text="足迹"
+            android:textColor="@drawable/selector_main_rb_text_color"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:background="#00000000"
+            android:id="@+id/rbExplore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_rb_explore"
+            android:gravity="center"
+            android:text="探索"
+            android:textColor="@drawable/selector_main_rb_text_color"
+
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:background="#00000000"
+            android:id="@+id/rbPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_rb_post"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/selector_main_rb_text_color"
+
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:background="#00000000"
+            android:id="@+id/rbMine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_main_rb_mine"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/selector_main_rb_text_color"
+            android:textSize="12sp"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>
